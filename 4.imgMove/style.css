@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #222;
+    color: rgb(172, 138, 203);
+}
+
+#elem1 {
+    background-color: #19193d;
+    height: 142px;
+}
+
+#head {
+    font-size: 3rem;
+    color: rgb(0, 255, 8);
+}
+
+.elem {
+    height: 120px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#head,
+h2 {
+    /* js styling  */
+    z-index: 10;
+    /* img jab text me move krgi to text se img blend ho jaigi */
+    mix-blend-mode: difference;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* p:a, se hi imgs move hogi  */
+    position: absolute;
+
+    /* img center me hoga mouse move k sami */
+    transform: translate(-50%, -50%);
+    /* mouse enter krne pe 1 ho jaigi */
+    opacity: 0;
+    /* img thda slow chalegi  */
+    transition: all linear 0.4s;
+
+}
+
+#brb,
+#wiz {
+    object-position: top;
+}
+
+#arc,
+#ban {
+    object-position: 0% 20%;
+}
+
+#bow {
+    object-position: 0% 30%;
+}
+
+#skelgnt {
+    object-position: 0% 40%;
+}
+
+#cr,
+#cannon,
+#dart,
+#mega {
+    object-position: 0% 70%;
+}
+
+#bomb,
+#hntr {
+    object-position: 0% 80%;
+}
+
+#kngt,
+#spear,
+#valk {
+    object-position: 0% 90%;
+}
+
+#lum {
+    object-fit: contain;
+    background-color: #210d21;
+}
+
+#skelbrl {
+    object-fit: contain;
+    background-color: #191947;
+}
+
+#minor {
+    object-position: bottom;
+}

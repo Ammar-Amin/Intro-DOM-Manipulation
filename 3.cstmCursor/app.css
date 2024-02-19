@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: salmon;
+
+    /* position: relative; */
+}
+
+h1 {
+    text-align: center;
+    padding: 25px;
+
+    color: beige;
+    background-color: rgb(48, 48, 126);
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h4 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    font-size: 20px;
+    padding: 40px 80px;
+    margin: 25px auto;
+}
+
+#dot {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+
+    /* p:a, se hi mouse move hoga  */
+    position: absolute;
+    /* is prop se cursor text k sath blend hoga  */
+    mix-blend-mode: difference;
+    /* cursor ki movement me thoda delay hoga  */
+    transition: all linear 0.1s;
+}
